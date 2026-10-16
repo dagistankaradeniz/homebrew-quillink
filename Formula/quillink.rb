@@ -44,6 +44,6 @@ class Quillink < Formula
   end
 
   test do
-    system "#{bin}/quillink --version"
+    system "#{bin}/quillink", "--version"
   end
 end
