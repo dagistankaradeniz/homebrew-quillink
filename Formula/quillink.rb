@@ -5,20 +5,20 @@
 class Quillink < Formula
   desc "Command-line client for Quillink"
   homepage "https://github.com/dagistankaradeniz/gcp-note-taking-cli"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dagistankaradeniz/gcp-note-taking-cli/releases/download/v0.2.0/quillink_darwin_amd64.tar.gz"
-      sha256 "206b891119b0b685a6bc7e4feb985e15ef47b3e98f5e59d129ba704186483e54"
+      url "https://github.com/dagistankaradeniz/gcp-note-taking-cli/releases/download/v0.3.0/quillink_darwin_amd64.tar.gz"
+      sha256 "7d9e040810a088d93463f4ce0b4d393c4ac298827b59b8a495f03b094d826498"
 
       define_method(:install) do
         bin.install "quillink"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dagistankaradeniz/gcp-note-taking-cli/releases/download/v0.2.0/quillink_darwin_arm64.tar.gz"
-      sha256 "928c625d824ac5a72efb82a0c123ffdf8c5e65651c65a7aed991cb9d976f1eb8"
+      url "https://github.com/dagistankaradeniz/gcp-note-taking-cli/releases/download/v0.3.0/quillink_darwin_arm64.tar.gz"
+      sha256 "25da564e4268ecfb8acb0d24a733d47a107216cd396517b13e5d256067d33659"
 
       define_method(:install) do
         bin.install "quillink"
@@ -28,15 +28,15 @@ class Quillink < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dagistankaradeniz/gcp-note-taking-cli/releases/download/v0.2.0/quillink_linux_amd64.tar.gz"
-      sha256 "cb70995a0cea28a2009ad07d0930fc3d6f1b015a98e3bd227b4d5eeb4f3004fd"
+      url "https://github.com/dagistankaradeniz/gcp-note-taking-cli/releases/download/v0.3.0/quillink_linux_amd64.tar.gz"
+      sha256 "23f3d397d845d660b7194a4147d03b1d8c3e989a894ff99e90688a1d1ba44128"
       define_method(:install) do
         bin.install "quillink"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dagistankaradeniz/gcp-note-taking-cli/releases/download/v0.2.0/quillink_linux_arm64.tar.gz"
-      sha256 "f6c7cf97c3f8559ee8d626f41e47fc986c378ee4c2f87a9a867bd2ab4d8ea141"
+      url "https://github.com/dagistankaradeniz/gcp-note-taking-cli/releases/download/v0.3.0/quillink_linux_arm64.tar.gz"
+      sha256 "e218ea44337af5b54f07ae624ab7049d3bc81815b14a9c8636f35320abdd8677"
       define_method(:install) do
         bin.install "quillink"
       end
